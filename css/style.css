@@ -6,6 +6,7 @@
     --light-color: #fff;
     --green: #4CA1AF;
     --prussian-blue: #002642;
+    --middle-gray: #d5d5d5;
 }
 
 * {
@@ -117,7 +118,6 @@ h1 {
 .container { 
     max-width: 1400px;
     min-height: 100vh;
-    margin: 0 auto;
     padding: 0 5%;
 
     display: flex;
@@ -130,7 +130,7 @@ h1 {
     background: var(--light-color);
     border-radius: 0.5rem;
     padding: 5rem;
-    max-width: 1300px;
+    max-width:100%;
 }
 
 .a-subtitle-faq {
@@ -151,12 +151,17 @@ h1 {
     margin: 1rem 0;
     max-width: 600px;
     margin: 0 auto;
-    border-bottom: 1px solid var(--middle-gray-2);
+    border-bottom: 1px solid var(--middle-gray);
     transition: var(--transition);
 }
 
-.faq.active {
-    border: 1px solid var(--middle-gray-2);
+.faq-item {
+    margin-bottom: 1rem;
+    transition: var(--transition);
+}
+
+.faq-item.active {
+    border: 1px solid var(--middle-gray);
     border-radius: .25rem;
     box-shadow: 0px 2px 4px 4px rgba(0,0,0,0.1);
     transition: var(--transition);
@@ -187,12 +192,12 @@ h1 {
     padding: 1rem;
     border-radius: 50%;
     color: var(--prussian-blue);
-    background-color: var(--primary-green);
+    background-color: var(--green);
     transition: var(--transition);
 }
 
 .active, .accordion:hover {
-    color: var(--primary-green);
+    color: var(--green);
 }
 
 .accordion i:hover, 
