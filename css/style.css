@@ -151,7 +151,6 @@ h1 {
     margin: 1rem 0;
     max-width: 1000px;
     margin: 0 auto;
-    border-bottom: 1px solid var(--middle-gray);
     transition: var(--transition);
 
     display: flex;
@@ -172,7 +171,7 @@ h1 {
  }
 
 .faq-item {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     transition: var(--transition);
 }
 
