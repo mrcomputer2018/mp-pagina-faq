@@ -149,7 +149,7 @@ h1 {
 .faq-content {
     border: none;
     margin: 1rem 0;
-    max-width: 1000px;
+    max-width: 900px;
     margin: 0 auto;
     transition: var(--transition);
 
