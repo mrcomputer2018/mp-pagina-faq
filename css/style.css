@@ -5,6 +5,7 @@
     --dark-color: #02040F;
     --light-color: #fff;
     --green: #4CA1AF;
+    --prussian-blue: #002642;
 }
 
 * {
@@ -81,12 +82,36 @@ h1 {
     font-size: 3.6rem;
     font-weight: 800;
     line-height: 1.2;
-    color: var(--dark-color);
+    color: var(--prussian-blue));
 }
 
-.py-7 {
-    padding-top: 7rem;
-    padding-bottom: 7rem;
+.title {
+    font-size: 2.6rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 3rem;
+    line-height: 1.3rem;
+    position: relative;
+}
+
+.title h1::after {
+    content: '';
+    position: inherit;
+    display: block;
+    top: 10px;
+    width: 70px;
+    height: 3px;
+    background-color:var(--dark-color);
+}
+
+.lead {
+    opacity: 0.8;
+    padding: 1rem 0;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.8;
+    color: var(--prussian-blue);
 }
 
 .container { 
@@ -104,4 +129,5 @@ h1 {
 .faq {
     background: var(--light-color);
     border-radius: 0.5rem;
+    padding: 5rem;
 }
